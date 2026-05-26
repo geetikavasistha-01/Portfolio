@@ -1,6 +1,5 @@
-
 import { TopNavigation } from './components/layout/TopNavigation';
-import { SideNavigation } from './components/layout/SideNavigation';
+import { DecorativeSidebars } from './components/layout/DecorativeSidebars';
 import { FooterCTA } from './components/layout/FooterCTA';
 
 import { HeroSection } from './components/sections/HeroSection';
@@ -13,16 +12,22 @@ import { ProjectsGrid } from './components/sections/ProjectsGrid';
 import { Commendations } from './components/sections/Commendations';
 import { CurrentFocus } from './components/sections/CurrentFocus';
 import { ClickEffect } from './components/common/ClickEffect';
+import { SkyBackground } from '@/components/animate-ui/components/backgrounds/SkyBackground';
 
 function App() {
   return (
-    <div className="relative min-h-screen">
+    <div className="relative min-h-screen transition-colors duration-300">
+      <SkyBackground
+        starColor="#FFF"
+        starCount={150}
+        className="fixed inset-0 -z-10"
+      />
       <ClickEffect />
       <TopNavigation />
-      <SideNavigation />
+      <DecorativeSidebars />
       
       {/* Main Content Spine */}
-      <main className="max-w-[900px] mx-auto pt-32 pb-20 px-6">
+      <main className="max-w-[900px] mx-auto pt-32 pb-20 px-6 relative z-10">
         <HeroSection />
         <StickyNotes />
         <ResearchDomains />
