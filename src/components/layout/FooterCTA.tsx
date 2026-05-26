@@ -151,7 +151,7 @@ export const FooterCTA: React.FC = () => {
   return (
     <footer className="w-full bg-transparent pt-24 pb-12 px-6 flex flex-col items-center overflow-hidden" id="connect">
       <div
-        className="max-w-[1000px] w-full p-12 md:p-20 rounded-xl shadow-xl flex flex-col items-center text-center relative rotate-[-0.5deg] border border-black/5 hover:rotate-0 transition-transform duration-500 overflow-hidden"
+        className="max-w-[1000px] w-full px-10 py-12 md:px-20 md:py-16 rounded-xl shadow-xl flex flex-col items-center text-center relative rotate-[-0.5deg] border border-black/5 hover:rotate-0 transition-transform duration-500 overflow-hidden gap-4"
         style={{
           backgroundColor: isDark ? '#f0e8d8' : '#ffffff',
           transition: 'background-color 0.4s ease, transform 0.5s ease'
@@ -164,14 +164,26 @@ export const FooterCTA: React.FC = () => {
         {/* Decorative inner border */}
         <div className="absolute inset-4 border border-dashed border-[#d95f3b]/15 pointer-events-none rounded-lg"></div>
 
-        <h3 className="font-headline text-[48px] md:text-[68px] text-[#2a1f1a] mb-6 leading-tight max-w-[700px]">
-          Let's build something <span className="italic font-light">that matters.</span>
+        <h3
+          className="text-[44px] md:text-[72px] text-[#2a1f1a] mb-1 leading-[1.1] max-w-[800px] whitespace-nowrap"
+          style={{ fontFamily: '"EB Garamond", serif', fontWeight: 400 }}
+        >
+          Let's build something
         </h3>
-        <p className="font-body text-[18px] text-[#2a1f1a]/80 mb-12 max-w-[500px]">
+        <h3
+          className="text-[44px] md:text-[72px] mb-4 md:mb-6 leading-[1.1]"
+          style={{ fontFamily: '"IM Fell DW Pica", serif', fontStyle: 'italic', fontWeight: 400, color: '#d95f3b' }}
+        >
+          that matters.
+        </h3>
+        <p
+          className="text-[21px] md:text-[23px] text-[#2a1f1a]/70 mb-8 md:mb-10 max-w-[520px] leading-relaxed"
+          style={{ fontFamily: '"IM Fell DW Pica", serif', fontStyle: 'italic', fontWeight: 400 }}
+        >
           Got a problem worth solving? I turn ideas into shipped products — let's scope it out.
         </p>
 
-        <div className="flex flex-col md:flex-row gap-6 mb-16 relative z-10 w-full max-w-[400px]">
+        <div className="flex flex-col md:flex-row gap-8 mb-10 md:mb-12 relative z-10 w-full max-w-[440px]">
           <div className="relative flex-1">
             <button
               onClick={() => setShowPopup(!showPopup)}
@@ -260,7 +272,7 @@ export const FooterCTA: React.FC = () => {
 
         {/* Social Links Row */}
         <div
-          className="flex flex-wrap justify-center gap-3 relative z-10 px-5 py-4 border border-[#d95f3b]/10 rounded-3xl backdrop-blur-sm"
+          className="w-full flex flex-nowrap justify-evenly gap-4 relative z-10 px-8 py-5 border border-[#d95f3b]/10 rounded-3xl backdrop-blur-sm"
           style={{
             backgroundColor: isDark ? 'rgba(235, 224, 204, 0.6)' : '#ffffff',
             transition: 'background-color 0.4s ease'
@@ -268,11 +280,22 @@ export const FooterCTA: React.FC = () => {
         >
           {SOCIAL_LINKS.map((social) => (
             <div key={social.name} className="relative group flex flex-col items-center gap-1">
-              <button
+              <motion.button
                 onClick={() => window.open(social.url, '_blank')}
                 aria-label={social.name}
-                className="w-10 h-10 flex items-center justify-center rounded-2xl text-[#d95f3b] transition-all duration-200 hover:bg-[#d95f3b]/10"
+                className="w-10 h-10 flex items-center justify-center rounded-2xl text-[#d95f3b] transition-colors duration-200 hover:bg-[#d95f3b]/10"
                 style={{ '--brand-color': social.brandColor } as React.CSSProperties}
+                whileHover={{ y: -4, scale: 1.15 }}
+                whileTap={{
+                  scale: 0.75,
+                  rotate: [0, -12, 14, -8, 0],
+                  y: [0, -6, 2, 0],
+                }}
+                transition={{
+                  type: 'spring',
+                  stiffness: 400,
+                  damping: 12,
+                }}
                 onMouseEnter={(e) => {
                   (e.currentTarget as HTMLElement).style.color = social.brandColor;
                 }}
@@ -281,7 +304,7 @@ export const FooterCTA: React.FC = () => {
                 }}
               >
                 <social.icon width={20} height={20} />
-              </button>
+              </motion.button>
               <span className="opacity-0 group-hover:opacity-100 transition-opacity duration-150 text-[7px] font-label tracking-widest uppercase text-[#d95f3b]/60 whitespace-nowrap pointer-events-none leading-none">
                 {social.name}
               </span>
