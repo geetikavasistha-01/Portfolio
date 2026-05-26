@@ -1,8 +1,8 @@
 export const NAV_LINKS = [
   { label: 'ABOUT', href: '#about' },
   { label: 'STACK', href: '#stack' },
-  { label: 'PROJECTS', href: '#projects' },
   { label: 'EXPERIENCE', href: '#experience' },
+  { label: 'PROJECTS', href: '#projects' },
   { label: 'AWARDS', href: '#awards' },
   { label: 'CONNECT', href: '#connect' },
 ];
@@ -19,7 +19,7 @@ export const SIDE_NAV = [
 export const HERO_DATA = {
   name: "Geetika Vasistha",
   subtitle: "AI ENGINEER & DATA SCIENTIST",
-  headline: ["Agents should think.", "freely."],
+  headline: ["Building strong systems", "for safe intelligence."],
   ticker: "AGENTIC AI · RAG PIPELINES · COMPUTER USE AGENTS · LANGCHAIN · REINFORCEMENT LEARNING · INDIA · OPEN TO WORK · AGENTIC AI · RAG PIPELINES · COMPUTER USE AGENTS · LANGCHAIN · REINFORCEMENT LEARNING · INDIA · OPEN TO WORK",
   image: "https://lh3.googleusercontent.com/aida-public/AB6AXuCE2Q-M_ruPCNxGDlspWwTgj3NDXnSHhGITouZ9Ks-d2PwFUtGm0IdbtDzwjOycviFts12tUx_0xdRBtIbZpMW8GPyXvD1mkfSahnLiy_cxS3VFKY2LjgzqMySqRB7R-rXmYSMjR45dygTBldnEdbyEjt4NdrRrmQEByc0q9zGhDJWQxmBsVe7pg9wYoM5hhxHBXYr6ot0QTDiI-dgK6p388O14j25MYYibPTvaDDXbD3D4IjZI1QxPU2BmQr4JF8X_llE8QVxbZ8Dn"
 };
@@ -29,7 +29,7 @@ export const STICKY_NOTES = [
     theme: '#fcf5e5',
     color: '#2a1f1a',
     barColor: 'bg-primary/10',
-    text: '"Tirelessly pursue clarity."',
+    text: "Every model we train has a carbon cost. Build with that weight.",
     tag: 'Entry #01',
     rotation: '-2deg',
     top: '0',
@@ -39,7 +39,7 @@ export const STICKY_NOTES = [
     theme: '#f2efe4',
     color: '#2a1f1a',
     barColor: 'bg-secondary/20',
-    text: 'LOGIC CHECK: AI should augment human intent, not replace it.',
+    text: "Failure is inevitable. Design for resilience, not perfection.",
     tag: 'Thought Loop',
     rotation: '3deg',
     top: '40px',
@@ -49,7 +49,7 @@ export const STICKY_NOTES = [
     theme: '#fff9f0',
     color: '#2a1f1a',
     barColor: 'bg-primary/20',
-    text: 'Design for decisions, not just outputs.',
+    text: "Safety isn't a constraint on progress. It's the foundation of it.",
     tag: 'Philosophy',
     rotation: '-1deg',
     top: '80px',
@@ -90,32 +90,41 @@ export const TECH_STACK = [
 
 export const EXPERIENCE_LOG = [
   {
-    title: 'AI Engineering Intern',
-    company: 'Havish M Consultancy',
-    date: 'JAN 2024 - PRESENT',
-    description: 'Spearheading RAG pipeline optimization and fine-tuning open-source LLMs for specialized domain knowledge retrieval.',
-    markerColor: 'border-primary-container',
-    dotColor: 'bg-primary-container',
-    rotation: '1deg'
+    title: "Visual and UX Designer",
+    company: "Aadi Art — Remote",
+    date: "Mar 2026 – May 2026",
+    description: "Designed end-to-end UI/UX from scratch in Figma for production — prioritised visual identity, intuitive user experience, and onboarding flows. Architected full tech stack in a 4-member founding team and built a geospatial visualisation module (MapLibre GL) for region-wise exploration of cultural datasets.",
+    rotation: "-1deg",
+    markerColor: "border-[#d95f3b]",
+    dotColor: "bg-[#d95f3b]",
   },
   {
-    title: 'Machine Learning Engineer',
-    company: 'Co-founder @ Raphsons Robotics',
-    date: '2022 - 2024',
-    description: 'Architected navigation systems for indoor robots using Computer Vision and SLAM algorithms.',
-    markerColor: 'border-primary/40',
-    dotColor: 'bg-primary/40',
-    rotation: '-1deg'
+    title: "Backend Developer Intern",
+    company: "Sacred Gurukul — On-site",
+    date: "Dec 2025 – Mar 2026",
+    description: "Contributed to two live products (Hospaccx Healthcare, Sacred Gurukul EdTech); built scalable Django REST APIs with MongoDB. Implemented secure authentication, RBAC, and payment integration; maintained agile documentation.",
+    rotation: "1deg",
+    markerColor: "border-[#d95f3b]/60",
+    dotColor: "bg-[#d95f3b]/60",
   },
   {
-    title: 'Backend Developer Intern',
-    company: 'Sacred Gurukul',
-    date: '2021',
-    description: 'Optimized legacy database architectures for enhanced retrieval speeds and concurrent user handling.',
-    markerColor: 'border-primary/40',
-    dotColor: 'bg-primary/40',
-    rotation: '1deg'
-  }
+    title: "AI Engineering Intern",
+    company: "Havish M Consultancy — On-site",
+    date: "Jul 2025 – Dec 2025",
+    description: "Designed ML-driven document intelligence platform (Django + React) for Landmark Group; automated extraction pipeline cutting processing time by 50%. Built Streamlit dashboard integrating open-source LLMs for real-time KPI tracking, improving on-time delivery by 70%. Engineered REST APIs achieving sub-200ms response times under concurrent load.",
+    rotation: "-0.5deg",
+    markerColor: "border-[#d95f3b]",
+    dotColor: "bg-[#d95f3b]",
+  },
+  {
+    title: "Machine Learning Engineer",
+    company: "Raphsons Robotics Ltd — SRM IST Incubated",
+    date: "Mar 2025 – Dec 2025",
+    description: "Built end-to-end data pipeline (pandas, NumPy, PostgreSQL) achieving 1000+ images/hour throughput with 25% faster runtime. Developed real-time anomaly detection for robotic inspection, improving accuracy by 40% via feature engineering; applied quantization and pruning for production deployment.",
+    rotation: "0.8deg",
+    markerColor: "border-[#d95f3b]/60",
+    dotColor: "bg-[#d95f3b]/60",
+  },
 ];
 
 export const PROJECTS = [
