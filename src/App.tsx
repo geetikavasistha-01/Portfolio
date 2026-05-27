@@ -27,7 +27,7 @@ function App() {
       <DecorativeSidebars />
       
       {/* Main Content Spine */}
-      <main className="max-w-[900px] mx-auto pt-32 pb-20 px-6 relative z-10">
+      <main className="max-w-[900px] mx-auto pt-32 pb-4 px-6 relative z-10">
         <HeroSection />
         <StickyNotes />
         <ResearchDomains />

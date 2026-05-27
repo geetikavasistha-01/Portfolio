@@ -161,15 +161,21 @@ export const PROJECTS = [
 export const AWARDS = [
   {
     title: "Winner",
-    event: "IIT DELHI HACKATHON",
-    description: "For developing an AI-driven disaster response system.",
+    event: "IIT DELHI TRYST 2025",
+    description: "Built a sustainability platform tracking Scope 3 emissions and carbon offsetting for the Fashion Industry, which accounts for 20% of global carbon emissions.",
     icon: "verified"
   },
   {
     title: "Winner",
-    event: "GFG GLOBAL CHALLENGE",
+    event: "GEEKSFORGEEKS GLOBAL CHALLENGE",
     description: "Recognized for algorithmic excellence in system design.",
     icon: "military_tech"
+  },
+  {
+    title: "Open Source Contribution",
+    event: "GIRL SCRIPT SUMMER OF CODE",
+    description: "Selected as a contributor in both GSSoC 2025 and GSSoC 2026.",
+    icon: "code"
   }
 ];
 

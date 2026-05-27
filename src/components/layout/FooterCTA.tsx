@@ -149,7 +149,7 @@ export const FooterCTA: React.FC = () => {
   };
 
   return (
-    <footer className="w-full bg-transparent pt-24 pb-12 px-6 flex flex-col items-center overflow-hidden" id="connect">
+    <footer className="w-full bg-transparent pt-8 pb-12 px-6 flex flex-col items-center overflow-hidden" id="connect">
       <div
         className="max-w-[1000px] w-full px-10 py-12 md:px-20 md:py-16 rounded-xl shadow-xl flex flex-col items-center text-center relative rotate-[-0.5deg] border border-black/5 hover:rotate-0 transition-transform duration-500 overflow-hidden gap-4"
         style={{
